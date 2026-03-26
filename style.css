@@ -1,4 +1,149 @@
-.yellow {
-    color: palegoldenrod
+/*polices et couleurs des écritures*/
+
+/* je me suis aidée du prompt chatgpt qui est dans le html pour lister les paramètres sur lesquels je peux intervenir plus facilement,
+ puis j'ai remplacé à pour convenir à la direction artistique du figma*/
+
+h1 {
+
+    font-family: 'Gravitas One', serif ;/*pour que ça ressemble au figma*/
+    font-size: 80px ; 
+    color:#a90b32 ;
+    font-weight: bold ;
+    text-align: center ;
+
 }
 
+h2 {
+    font-family: 'Georgia', serif ;
+    font-size: 30px ; 
+    color: #a90b32 ;
+    font-weight: bold ;
+    text-align: center ;
+}
+
+h3 {
+    font-family: 'Georgia', serif ;
+    font-size:20px ; 
+    font-weight: bold ;
+    color: #f5e1c2 ;
+    text-align: center ;
+
+}
+
+h4 {  
+    font-family: 'Georgia', serif ;
+    font-size: 16px ; 
+    color:#e89f4c ;
+    text-align: left ;
+
+}
+
+h5 {
+    font-family: 'Georgia', serif ;
+    font-size: 12px ; 
+    color:#e89f4c ;
+    text-align: left ;
+
+}
+
+p {
+    font-family: Georgia, serif;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f5e1c2; 
+}
+
+/* menu */
+
+/*pour le menu j'ai fait un prompt chatgpt mais j'ai perdu la réponse*/
+
+.menu {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Aligne horizontalement */
+    justify-content: center; /* Centre le menu */
+    background-color: #034125 ; /* Couleur du menu */
+    padding: 15px; /* Espacement */
+}
+
+.menu li {
+    margin: 0 15px; /* Espacement entre les éléments */
+}
+
+.menu a {
+    color: #f5e1c2;
+    text-decoration: none; /* corrige mon code pour supprimer le soulignement : ajout de la ligne : */ 
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #e89f4c;
+}
+
+
+.intro {
+    text-align: center;
+    padding: 40px;
+    background-color: #e89f4c;
+}
+
+/* spectacle */
+
+.spectacles {
+    padding: 20px;
+}
+
+.spectacles h2 {
+    text-align: center;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px; /* Espacement entre les cartes */
+}
+
+.carte {
+    background-color: #a90b32;
+    padding: 15px;
+    border-radius: 10px; /* Coins arrondis */
+    text-align: center;
+}
+
+.carte img {
+    width: 100%; /* cf prompt html*/
+    height: auto; 
+
+}
+
+button {
+    background-color: #a90b32; 
+    color: #f5e1c2;
+    border: none; 
+    padding: 8px 12px; /*espace intérieur = taille du bouton ici*/
+    font-size: 12px;
+    cursor: pointer; /* chatgpt pour cette instruction : curseur main */ 
+    transition: 0.3s; 
+    font-weight: bold ;
+    text-align: right ;
+}
+
+button:hover {
+    background-color: #a90b32; 
+    color: #e89f4c;
+    border: 1px solid #e89f4c /*ligne faite avec chatgpt*/
+}
+
+/* bas de page */
+
+footer {
+    text-align: center;
+    background-color: #034125;
+    color: #f5e1c2;
+    padding: 15px;
+    margin-top: 30px;
+}

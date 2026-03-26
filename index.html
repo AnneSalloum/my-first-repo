@@ -1,25 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- comme on a fait en cours-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>CERCLE CYRANO</title>
 
     <!--a comment lol -->
 
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    <h1>Hello World !</h1>
-    <h2 class="yellow"> how are you</h2>
-    <h3>darling</h3>
-    <h4>title 4</h4>
-    <h5>title 5</h5>
-    <p>a paragraph</p>
-    <img
-        src="data:image/jpeg;base64,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"
-        alt="image of an image" >
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <!-- menu-->
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos théâtres</a></li>
+                <li><a href="#">Billetterie</a></li>
+                <li><a href="#">À l'affiche</a></li>
+                <li><a href="#">Infos pratiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>CERCLE CYRANO</h1>
+    </section>
+
+    <!-- spectacles -->
+    <section class="spectacles">
+
+        <h2>À l'affiche</h2> 
+
+        <div class="grille">
+
+            <!-- spectacle -->
+            <div class="carte">
+                <img src="https://makerslab.em-lyon.com/dww/data/shows/wicked.jpg" alt="Wicked">
+                <h3>Wicked</h3>
+                <h4>Apollo Victoria Theatre</h4>
+                <h5>musicals</h5>
+                <button popovertarget="my-popup">from $29.00</button>  
+                <div popover id="my-popup">
+
+            </div>
+            </div>
+
+            <!-- spectacle -->
+            <div class="carte">
+                <img src="https://makerslab.em-lyon.com/dww/data/shows/the-mirror-and-the-light.jpg" alt="The Mirror and the Light">
+                <h3>The Mirror and the Light</h3>
+                <h4>Gielgud Theatre</h4>
+                <h5>plays</h5>
+                <button popovertarget="my-popup1">from $59.00</button>  
+                <div popover id="my-popup1">
+                    <h2>The Mirror and the Light</h2>
+                    <h3>Show of the Week - Special prices available</h3>
+                    <p>From Sun Dec 19 2021 to Sun Jan 23 2022</p>
+                    <p>Gielgud Theatre</p>
+                    <p>$59.00</p>
+                    <p> only 198 tickets remaining !</p>
+                    <button popovertarget="my-popup1">close</button>
+        
+            </div>
+            </div>
+
+            <!-- spectacle -->
+            <div class="carte">
+                <img src="https://makerslab.em-lyon.com/dww/data/shows/oleanna.jpg" alt="Oleanna">
+                <h3>Oleanna</h3>
+                <h4>Arts Theatre</h4>
+                <h5>plays</h5>
+                <button popovertarget="my-popup">from $49.00</button>  
+                <div popover id="my-popup">
+            </div>
+            </div>
+
+            <!-- spectacle -->
+            <div class="carte">
+                <img src="https://makerslab.em-lyon.com/dww/data/shows/the-play-that-goes-wrong.jpg" alt="The Play That Goes Wrong">
+                <h3>The Play That Goes Wrong</h3>
+                <h4>Duchess Theatre</h4>
+                <h5>comedy</h5>
+                <button popovertarget="my-popup">from $59.00</button>  
+                <div popover id="my-popup">
+            </div>
+            </div>
+
+            <!-- spectacle -->
+            <div class="carte">
+                <img src="https://makerslab.em-lyon.com/dww/data/shows/dear-evan-hansen.jpg" alt="Dear Evan Hansen">
+                <h3>Dear Evan Hansen</h3>
+                <h4>Noel Caward Theatre</h4>
+                <h5>musicals</h5>
+                <button popovertarget="my-popup">from $49.00</button>  
+                <div popover id="my-popup">
+            </div>
+            </div>
+
+            <!-- spectacle -->
+            <div class="carte">
+                <img src="https://makerslab.em-lyon.com/dww/data/shows/pride-and-prejudice-sort-of.jpg" alt="Pride and Prejudice">
+                <h3>Pride and Prejudice</h3>
+                <h4>Criterion Theatre</h4>
+                <h5>comedy</h5>
+                <button popovertarget="my-popup">from $59.00</button>  
+                <div popover id="my-popup">
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- bas de page -->
+    <footer> 
+        <p>haut de page</p>
+    </footer>
 
 </body>
+
 </html>
+
+
+<!--pour plus de lisibilité voici mes prompts fait à partir de chatgpt, quand les réponses sont trop longues je le coupe ou les résume
+
+question : 
+voici une partie de mon code, le problème c'est que ce qui est affiché 
+c'est une carte dans une carte dans une carte etc au lieu de plusieurs cartes juxtaposées. 
+peux tu corriger l'erreur ? qu'ai-je oublié ?
+réponse :
+il m'a simplement dit d'ajouter un </div> après chaque spectacle
+
+question :
+je veux coder un style pour une classe "class", 
+donne moi une liste de paramètres que je pourrais intégrer (exemple : background-color, etc) pour affiner le style
+réponse :
+.ma-classe {
+    /* 🎨 Couleurs */
+    background-color: ; /* Couleur de fond */
+    color: ; /* Couleur du texte */
+
+    /* 🖋️ Texte */
+    font-family: ; /* Police */
+    font-size: ; /* Taille du texte */
+    font-weight: ; /* Gras (normal, bold, 100-900) */
+    text-align: ; /* left, center, right */
+    line-height: ; /* Espacement entre lignes */
+    letter-spacing: ; /* Espacement des lettres */
+
+    /* 📦 Dimensions */
+    width: ; /* Largeur */
+    height: ; /* Hauteur */
+    max-width: ; /* Largeur max */
+    min-height: ; /* Hauteur min */
+
+    /* 📏 Espacements */
+    margin: ; /* Espace extérieur */
+    padding: ; /* Espace intérieur */
+
+    /* 🧱 Bordures */
+    border: ; /* ex: 2px solid black */ ou none
+    border-radius: ; /* Arrondi des coins */
+
+    /* 🌫️ Effets */
+    box-shadow: ; /* Ombre */
+    opacity: ; /* Transparence (0 à 1) */
+
+    /* 🖼️ Arrière-plan avancé */
+    background-image: ; /* image de fond */
+    background-size: ; /* cover, contain */
+    background-position: ; /* center */
+
+    /* 📐 Positionnement */
+    display: ; /* block, flex, grid */
+    position: ; /* relative, absolute */
+    top: ;
+    left: ;
+
+    /* 🎯 Alignement FLEX (si display:flex) */
+    justify-content: ; /* center, space-between */
+    align-items: ; /* center, flex-start */
+
+    /* 🔄 Transformations */
+    transform: ; /* rotate, scale */
+    transition: ; /* animation douce */
+
+    /* 🖱️ Interaction */
+    cursor: ; /* pointer, default */
+}
+
+question : comment mettre le cadre à la taille de l'image et non l'inverse ? 
+réponse : 
+.carte img {
+    width: 100%;
+    height: auto;
+}
+
+question : donne moi un exemple de grille en html
+réponse : 
+<div class="grille">
+
+    <div class="carte">Carte 1</div>
+    <div class="carte">Carte 2</div>
+    <div class="carte">Carte 3</div>
+    <div class="carte">Carte 4</div>
+    <div class="carte">Carte 5</div>
+    <div class="carte">Carte 6</div>
+
+</div>
+
+question : j'ai vu que pour faire un menu en html on a besoin de faire une liste avec ul et li
+donne moi un exemple de menu fait avec ca avec les titres suivants : 
+"nos théâtres", "billeterie", "à l'affiche" et "infos pratiques"
+réponse : 
+<nav>
+    <ul class="menu">
+        <li><a href="#">Nos théâtres</a></li>
+        <li><a href="#">Billetterie</a></li>
+        <li><a href="#">À l'affiche</a></li>
+        <li><a href="#">Infos pratiques</a></li>
+    </ul>
+</nav>
+
+question : voici mon code, pourquoi le bouton ne marche pas ? 
+réponse : c'était un problème de notation (j'avais noté deux boutons pareil)
+
+le footer a aussi été fait avec chatgpt 
+
+question: donne moi un exemple de css pour une grille, avec ce qu'il faut marquer dedans comme paramètres à changer
+réponse : 
+.grille {
+    display: grid; /* active le système de grille */
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 20px; /* espace entre les cartes */
+    padding: 20px; /* espace autour de la grille */
+}
+
+.carte {
+    background-color: #f5f5f5; /* couleur de fond de la carte */
+    border-radius: 10px; /* coins arrondis */
+    overflow: hidden; /* pour que l'image ne dépasse pas */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* ombre douce */
+}
+-->
+
+
+
+
+
+
